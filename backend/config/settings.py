@@ -142,3 +142,30 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "https://employee-saas.vercel.app",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://employee-saas.vercel.app",
+]
+
+ALLOWED_HOSTS = [
+    "employee-saas-backend.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "authorization",
+    "content-type",
+    "origin",
+    "x-csrftoken",
+    "x-requested-with",
+]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://employee-saas.vercel.app",
+]
